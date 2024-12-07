@@ -132,8 +132,8 @@ body{
     
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra alrededor de las fotos */
-    width: 200px; /* Tamaño fijo para el ancho */
-    height: 200px; /* Tamaño fijo para la altura */
+    width: 150px; /* Tamaño fijo para el ancho */
+    height: 150px; /* Tamaño fijo para la altura */
     object-fit: cover;
 }
 
