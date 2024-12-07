@@ -1,0 +1,208 @@
+body{
+    margin: 0%;
+    background-color: black;
+
+}
+.banner{
+    height:  150px;
+    color:goldenrod;
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+    
+    padding:40px 0;
+}
+.banner-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+/*.navbar{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    color: goldenrod;
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+.navbar a{
+    
+    color:goldenrod;
+    padding: 40px;
+    text-align: center;
+    justify-items: center;
+    text-decoration:dashed;
+    gap:20px;
+    padding-top: 40px;
+    transition: color 0.3s;
+    cursor: pointer;
+    font-family: serif;
+    font-style: italic;
+    font-size: 20px;
+}
+.navbar a:hover{
+    background-color:goldenrod;
+    color:black;
+    border-radius: 15px;
+    margin: 0%; 
+    
+}*/
+
+.opiniones{
+    text-align: center;
+    color: goldenrod;
+    font-family: serif;
+    font-style: italic;
+    font-size: 25px;
+    margin-top: 75px;
+}
+.opiniones p{
+    text-align: center;
+    font-family: serif;
+    font-style:italic;
+    color:goldenrod;
+    margin-top: 45px;
+    font-size: 30px;
+}
+.boton {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: black;
+    background-color:goldenrod;
+    text-decoration:none;;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 25px;
+}
+
+/* Estilo hover */
+.boton:hover {
+    background-color: black; 
+    color: goldenrod;
+    transform: translateY(-3px);
+}
+
+
+/* Estilo de clic */
+.boton:active {
+    transform: translateY(1px);
+}
+
+.titulo-platos{
+    margin-top: 100px;
+    height: 50px;
+    text-align: center;
+    color: goldenrod;
+    font-size:30px;
+    font-family: serif;
+    font-style: italic;
+    text-decoration:underline;
+
+}
+
+
+.platos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 30px;
+    justify-items: center; /* Centra las fotos en las celdas */
+    max-width: 40%; /* Limita el ancho del collage */
+    margin-right:30px ;
+    margin-top: 30px;
+
+}
+
+
+/* Estilo para cada foto y nombre */
+.photo-item {
+    text-align: center;
+}
+
+.photo-item img {
+    
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra alrededor de las fotos */
+    width: 200px; /* Tamaño fijo para el ancho */
+    height: 200px; /* Tamaño fijo para la altura */
+    object-fit: cover;
+}
+
+
+.carta{
+    margin-top: 50px;
+    height: 50px;
+    text-align: center;
+    color: goldenrod;
+    font-size:30px;
+    font-family: serif;
+    font-style: italic;
+    
+}
+.carta h3{
+    font-family: serif;
+    font-style: italic;
+    text-decoration:underline;
+}
+.carta p{
+    margin-top: 50px;
+    font-size:30px
+}
+.boton-pdf {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: black;
+    background-color: goldenrod; 
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10PX;
+    margin-bottom: 50px;
+}
+
+.boton-pdf:hover {
+    background-color: black; 
+    color: goldenrod;
+    transform: translateY(-3px);
+}
+
+.boton-pdf:active {
+    transform: translateY(1px);
+}
+
+
+
+/*
+.imagenes-carta{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    justify-items: center; 
+
+}
+@media (max-width: 768px) { 
+    .imagenes-carta {
+        grid-template-columns: repeat(1, 1fr); 
+    }
+}
+ 
+.imagen img {
+    
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 500px; 
+    height: 1300px; 
+    object-fit: cover;
+}
+*/
