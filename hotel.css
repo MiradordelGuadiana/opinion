@@ -122,6 +122,7 @@ body{
 .contenedor img {
     width: 300px; /* Ajusta el tamaño de la imagen */
     border-radius: 10px;
+    margin-top:20px;
     
 }
 
