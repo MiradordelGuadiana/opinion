@@ -97,6 +97,60 @@ body{
     transform: translateY(1px);
 }
 
+.tituloruta{
+    margin-top: 100px;
+    height: 50px;
+    text-align: center;
+    color: goldenrod;
+    font-size:25px;
+    font-family: serif;
+    font-style: italic;
+    text-decoration: underline;
+    
+
+}
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Imagen */
+.contenedor img {
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    border-radius: 10px;
+    
+}
+
+.boton1 {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: black;
+    background-color:goldenrod;
+    text-decoration:none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 25px;
+}
+
+/* Estilo hover */
+.boton1:hover {
+    background-color: black; 
+    color: goldenrod;
+    transform: translateY(-3px);
+}
+
+
+/* Estilo de clic */
+.boton1:active {
+    transform: translateY(1px);
+}
+
 .titulo-platos{
     margin-top: 100px;
     height: 50px;
