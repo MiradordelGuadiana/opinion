@@ -237,6 +237,33 @@ body{
 }
 
 
+.localizacion{
+    text-align: center;
+    color: goldenrod;
+    font-family: serif;
+    font-style: italic;
+    font-size: 25px;
+    margin-top: 250px;
+    height: 500px;
+}
+.localizacion h3{
+    font-family: serif;
+    font-style: italic;
+    text-decoration:underline;
+}
+.localizacion p{
+    text-align: center;
+    font-family: serif;
+    font-style:italic;
+    color:goldenrod;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.localizacion img{
+    width: 300px; /* Ajusta el tamaño de la imagen */
+    border-radius: 10px;
+}
+
 
 /*
 .imagenes-carta{
