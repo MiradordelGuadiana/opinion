@@ -271,6 +271,52 @@ body{
 }
 
 
+.opiniones2{
+    text-align: center;
+    color: goldenrod;
+    font-family: serif;
+    font-style: italic;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+.opiniones2 p{
+    text-align: center;
+    font-family: serif;
+    font-style:italic;
+    color:goldenrod;
+    margin-top: 45px;
+    font-size: 30px;
+}
+.boton {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: black;
+    background-color:goldenrod;
+    text-decoration:none;;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 25px;
+}
+
+/* Estilo hover */
+.boton:hover {
+    background-color: black; 
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    box-shadow: 0 0 5px goldenrod;
+    transform: translateY(-3px);
+}
+
+
+/* Estilo de clic */
+.boton:active {
+    transform: translateY(1px);
+}
+
+
 /*
 .imagenes-carta{
     display: grid;
