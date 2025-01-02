@@ -118,6 +118,8 @@ body{
     align-items: center;
     justify-content: center;
     margin-top: 30px;
+    font-family: serif;
+    font-style: italic;
 }
 
 /* Imagen */
