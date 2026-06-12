@@ -1,157 +1,370 @@
-
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mirador del Guadiana-Gastrobar</title>
-    <link rel="icon" href="icon.png" type="image/png">
-    <link href="hotel.css" rel="stylesheet">
-
+    <title>Mirador del Guadiana | Gastrobar</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="banner">
-        <img src="icon.png" class="logo">
-        <h1>Mirador del Guadiana-Gastrobar</h1>
-    </div>
-   <!--
-    <div class="navbar">
-        <a href="hotel.html">Inicio</a>
-        <a href="carta.html">Carta</a>
-        <a href="reservar.html">Reservar</a>
-    </div>
-    -->
-
-    <div class="opiniones">
-        <p>¡Deje su reseña aquí!</p>
-        <a href="https://www.tripadvisor.es/Restaurant_Review-g227871-d32707643-Reviews-Gastrobar_Mirador_del_Guadiana-Merida_Province_of_Badajoz_Extremadura.html#REVIEWS"class="boton">PULSE AQUÍ</a>
-       
-        
-    </div>
-   
-    <div class="tituloruta"><h3>Primer premio del público en la Ruta de la Tapa Gourmet 2024</h3></div>    
-        
-        <div class="contenedor">
-            <img src="tapa de la ruta.jpeg" alt="Tapa Gourmet">
-            <a href="https://acortar.link/Vn4PX8"class="boton1">NOTICIA</a>
-        
-    </div>
-
-
-    
-    <div class="titulo-platos">
-        <h3>Algunas sugerencias</h3>
-    </div>
-
-
-
-    <div class="platos">
-        
-                
-            <div class="photo-item">
-                <img src="ensalada mirador.jpeg" alt="Foto 1">    
-            </div>
-            <div class="photo-item">
-                <img src="plato11.jpeg" alt="Foto 2">
-            </div>
-            <div class="photo-item">
-                <img src="plato1.jpeg" alt="Foto 3">
-            </div>
-            <div class="photo-item">
-                <img src="plato4.jpeg" alt="Foto 4">
-            </div>
-            <div class="photo-item">
-                <img src="plato13.jpeg" alt="Foto 5">
-            </div>
-            <div class="photo-item">
-                <img src="plato3.jpeg" alt="Foto 6">
-            </div>
-            <div class="photo-item">
-                <img src="chuletillas.jpeg" alt="Foto 7">
-            </div>
-            <div class="photo-item">
-                <img src="plato15.jpeg" alt="Foto 8">
-            </div>
-            <div class="photo-item">
-                <img src="gambas.jpeg" alt="Foto 9">
-            </div>
-            <div class="photo-item">
-                <img src="plato16.jpeg" alt="Foto 10">
-            </div>
-            <div class="photo-item">
-                <img src="plato23.jpg.jpeg" alt="Foto 11">
-            </div>
-            <div class="photo-item">
-                <img src="pisto.jpeg" alt="Foto 12">
-            </div>
-            <div class="photo-item">
-                <img src="sepia.jpeg" alt="Foto 13">
-            </div>
-            <div class="photo-item">
-                <img src="pulpo.jpeg" alt="Foto 14">
-            </div>
-           
-            <div class="photo-item">
-                <img src="lemon pie.jpeg" alt="Foto 15">
-            </div>
-            <div class="photo-item">
-                <img src="serradura.jpeg" alt="Foto 16">
-            </div>
-            <div class="photo-item">
-                <img src="plato19.jpeg" alt="Foto 17">
-            </div>
-            <div class="photo-item">
-                <img src="muerte por chocolate.jpeg" alt="Foto 18">
-            </div>
-    </div>
-    
-
-    <div class="carta">
-       <h3>Cartas</h3>
-        
-    <p>Haz clic para descargar nuestras cartas:</p>
-  
-    <a href="carta_tapas.pdf" class="boton-pdf" download="TAPAS MIRADOR GUADIANA">TAPAS</a>
-    <a href="carta_actualizada1.pdf" class="boton-pdf" download= " COMIDAS MIRADOR GUADIANA">COMIDAS</a>
-    
-    </div>
-    
-
-    <!--<div class="imagenes-cartas">
-        <div class="imagen">
-            <img src="carta1.png" alt="Carta 1">
-        </div>
-        <div class="imagen">
-            <img src="carta2.png" alt="Carta 2">
-        </div>
-    </div>-->
-        <div class="localizacion">
-        <h3>Cómo llegar</h3>
-        <p>Haz clic en el mapa para abrir la ubicación en Google Maps:</p>
-        <a href="https://www.google.com/maps/place/Gastrobar+Mirador+del+Guadiana/@38.9128693,-6.3450238,17z/data=!3m1!4b1!4m6!3m5!1s0xd142700035a3abb:0xa8f287b12a54458f!8m2!3d38.9128693!4d-6.3450238!16s%2Fg%2F11wff79clj?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D" target="_blank">
-        <img src="mapa.png" alt="Mapa de la dirección">
+<script src="main.js"></script>
+<nav id="navbar" class="navbar">
+    <div class="logo">
+        <a href="#">
+            <img src="logo.png" alt="Logo Gastrobar">
+            <span class="logo-text">Mirador del Guadiana</span>
         </a>
     </div>
 
-
-    <div class="opiniones2">
-        <p>¡Esperamos volver a verle pronto!</p>
-        <a href="https://www.google.com/search?client=ms-android-vivo&sca_esv=0498bc00d9fe6155&hl=es-ES&cs=0&sxsrf=ADLYWIJRUZsZ99SRy9PNhiAZTursGXddDA:1731882743531&q=Gastrobar+Mirador+del+Guadiana+Rese%C3%B1as&ludocid=12173941937724999055&ibp=gwp;0,7&sa=X&ved=2ahUKEwjI5OH9teSJAxXjgP0HHcZyLJUQ9fQKegQIIxAF&biw=393&bih=768&dpr=2.75#lkt=LocalPoiReviews&lpg=cid:CgIgAQ%3D%3D"class="boton">PULSE AQUÍ</a>
-        
+    <!-- El botón del menú hamburguesa (oculto en PC) -->
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
 
+    <!-- Enlaces de navegación -->
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#carta">Carta</a></li>
+        <li><a href="#reservas">Reservar</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
 
+    <header id="inicio" class="hero">
+        <div class="hero-content slide-up-initial">
+            <h1>Sabores de la Tierra.</h1>
+            <p>Una experiencia gastronómica inolvidable en el corazón de la ciudad.</p>
+            <a href="#reservas" class="btn-reservar">Reservar mesa</a>
+        </div>
+    </header>
 
+    <section id="sugerencias" class="seccion bg-oscuro">
+        <div class="container reveal">
+            <h2 class="section-title">Sugerencias del Chef</h2>
+            <p class="section-subtitle">Déjate sorprender por nuestras especialidades estrella.</p>
 
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <img src="abanico.jpg" alt="Sugerencia 1">
+                        <div class="slide-caption">
+                            <h3>Abanico Ibérico</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="torrezno.jpg" alt="Sugerencia 3">
+                        <div class="slide-caption">
+                            <h3>Torreznos de Soria</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="chuletillas.jpg" alt="Sugerencia 2">
+                        <div class="slide-caption">
+                            <h3>Chuletillas de cordero lechal</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="arroz_carrilleras.jpg" alt="Sugerencia 3">
+                        <div class="slide-caption">
+                            <h3>Arroz con carrilleras</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="torta_casar.jpg" alt="Sugerencia 3">
+                        <div class="slide-caption">
+                            <h3>Torta del Casar</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="foie.jpg" alt="Sugerencia 3">
+                        <div class="slide-caption">
+                            <h3>Foie Micuit</h3>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="zorongollo.jpg" alt="Sugerencia 3">
+                        <div class="slide-caption">
+                            <h3>Zorongollo Extremeño</h3>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <img src="ancas_rana.jpg" alt="Sugerencia 3">
+                        <div class="slide-caption">
+                            <h3>Ancas de rana</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="gambones_plancha.jpg" alt="Sugerencia 3">
+                        <div class="slide-caption">
+                            <h3>Gambones a la plancha</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="pata_pulpo.jpg" alt="Sugerencia 3">
+                        <div class="slide-caption">
+                            <h3>Pata de pulpo</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="tiramisiu.jpg" alt="Sugerencia 3">
+                        <div class="slide-caption">
+                            <h3>Tiramisú de Jimena</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-btn prev" id="btnPrev">&#10094;</button>
+                <button class="carousel-btn next" id="btnNext">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="carta" class="seccion bg-claro">
+    <div class="container reveal">
+        <h2 class="section-title">Nuestra Carta</h2>
+        <p class="section-subtitle">Descubre nuestra selección de platos elaborados con pasión.</p>
+        
+        <div class="menu-accordion">
+            
+            <!-- Comienza la aventura -->
+            <div class="accordion-item">
+                <button class="accordion-header">Comienza la aventura <span class="icon">+</span></button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <div class="menu-row"><span class="dish-name">Jamón ibérico de la dehesa extremeña</span><span class="dish-price">15,00/25,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Lomo ibérico de bellota / Presa ibérica</span><span class="dish-price">15,00/25,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Surtido de ibéricos extremeños</span><span class="dish-price">22,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Tabla de quesos de Extremadura</span><span class="dish-price">15,00/25,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">1/2 Torta del Casar</span><span class="dish-price">20,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Foie Micuit</span><span class="dish-price">18,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Gildas con anchoa extra de Santoña</span><span class="dish-price">2,50 € / ud</span></div>
+                        <div class="menu-row"><span class="dish-name">Anchoas del cantábrico de Santoña (10 uds)</span><span class="dish-price">22,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Lomos de Sardina Ahumada</span><span class="dish-price">3,00 € / ud</span></div>
+                        <div class="menu-row"><span class="dish-name">Croquetas variadas de la casa (4/8 uds)</span><span class="dish-price">8,00/15,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Flor de alcachofa confitada (4 uds)</span><span class="dish-price">20,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Huevos rotos con jamón ibérico</span><span class="dish-price">15,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Gulas con huevos y patatas</span><span class="dish-price">15,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Patatas al rebujón con jamón ibérico</span><span class="dish-price">15,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Ancas de rana (8 uds)</span><span class="dish-price">15,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Migas del pastor con huevo frito</span><span class="dish-price">9,50 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Pisto manchego con huevo</span><span class="dish-price">12,90 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Baos de patatera y Torta de la Serena (3 uds)</span><span class="dish-price">9,90 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Bravísimas del Mirador del Guadiana</span><span class="dish-price">9,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Lengua al limón</span><span class="dish-price">12,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Caracoles en salsa</span><span class="dish-price">15,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Torreznos de Soria</span><span class="dish-price">15,00 €</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ensaladas -->
+            <div class="accordion-item">
+                <button class="accordion-header">Ensaladas <span class="icon">+</span></button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <div class="menu-row"><span class="dish-name">Tomate fresco aliñado</span><span class="dish-price">9,50 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Ensalada Mirador del Guadiana</span><span class="dish-price">14,50 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Ensalada Mixta / Gourmet</span><span class="dish-price">13,50 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Zorongollo Extremeño</span><span class="dish-price">13,50 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Salmorejo Extremeño</span><span class="dish-price">9,00 €</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Del Mar -->
+            <div class="accordion-item">
+                <button class="accordion-header">Del mar <span class="icon">+</span></button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <div class="menu-row"><span class="dish-name">Almejas a la marinera</span><span class="dish-price">15,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Gambones a la plancha (6 uds)</span><span class="dish-price">18,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Gambas al ajillo</span><span class="dish-price">16,50 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Bacalao dorado</span><span class="dish-price">16,50 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Tacos de bacalao en tempura</span><span class="dish-price">12,00/20,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Lomo de bacalao al horno</span><span class="dish-price">20,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Chipirones plancha / en su tinta</span><span class="dish-price">18,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Pata de pulpo a la gallega</span><span class="dish-price">20,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Pulpito a la gallega 500/600g</span><span class="dish-price">39,00 €</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- De la Tierra -->
+            <div class="accordion-item">
+                <button class="accordion-header">De la Tierra <span class="icon">+</span></button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <div class="menu-row"><span class="dish-name">Entrecot de retinto</span><span class="dish-price">25,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Solomillo ibérico de bellota</span><span class="dish-price">22,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Abanico ibérico de bellota</span><span class="dish-price">20,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Lagarto ibérico</span><span class="dish-price">18,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Chuletillas de cordero (5 uds)</span><span class="dish-price">22,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Caldereta Extremeña de cordero</span><span class="dish-price">20,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Carrilleras al vino tinto</span><span class="dish-price">18,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Rabo de toro</span><span class="dish-price">18,00 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Cachopo / Cachopo XL</span><span class="dish-price">24,00 € / 30,00€</span></div>
+                        <div class="menu-row"><span class="dish-name">Hamburguesa de vaca madurada</span><span class="dish-price">15,00 €</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dulce final -->
+            <div class="accordion-item">
+                <button class="accordion-header">Dulce final <span class="icon">+</span></button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <div class="menu-row"><span class="dish-name">Torrija casera con helados y nata</span><span class="dish-price">5,95 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Coulant de chocolate & helado</span><span class="dish-price">5,95 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Tiramisú de Jimena</span><span class="dish-price">5,95 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Tarta al Whisky</span><span class="dish-price">5,95 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Serradura Portuguesa</span><span class="dish-price">5,95 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Mousse de Mango</span><span class="dish-price">5,95 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Flan de huevo casero con nata</span><span class="dish-price">5,95 €</span></div>
+                        <div class="menu-row"><span class="dish-name">Helados variados</span><span class="dish-price">Consultar</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Menu -->
+            <div class="accordion-item">
+                <button class="accordion-header">Menú <span class="icon">+</span></button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <div class="menu-row"><span class="dish-name">Menú para grupos, familiares o amigos</span><span class="dish-price">Consultar</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Por encargo -->
+            <div class="accordion-item">
+                <button class="accordion-header">Por encargo <span class="icon">+</span></button>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <div class="menu-row"><span class="dish-name">Arroz caldoso con carrillera o rabo de toro</span><span class="dish-price">Consultar</span></div>
+                        <div class="menu-row"><span class="dish-name">Cochinillo</span><span class="dish-price">Consultar</span></div>
+                        <div class="menu-row"><span class="dish-name">Paella Mixta</span><span class="dish-price">Consultar</span></div>
+                        <div class="menu-row"><span class="dish-name">Paletilla o Pierna de cordero al horno</span><span class="dish-price">Consultar</span></div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            <p class="menu-disclaimer">
+                *Servicio de pan o picos 1,20€. Suplemento en terraza + 10%. PRECIOS I.V.A. INCLUIDO.
+            </p>
+        </div>
+    </div>
+</section>
+
+    <section id="reservas" class="seccion bg-oscuro">
+    <div class="container reveal">
+        <h2 class="section-title">Reserva tu Mesa</h2>
+        <p class="section-subtitle">Asegura tu lugar en una experiencia gastronómica única.</p>
+        
+        <div class="reservation-container">
+            <div id="mensaje-reserva"></div>
+
+            <form id="form-reserva" class="reservation-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan García" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono de contacto</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 600 000 000" minlength="9" maxlength="9" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
+                    <div class="form-group">
+    <label for="hora">Hora</label>
+    <select id="hora" name="hora" required>
+        <option value="" disabled selected>Selecciona una hora...</option>
+        </select>
+</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="personas">Número de personas</label>
+                    <select id="personas" name="personas" required>
+                        <option value="" disabled selected>Selecciona...</option>
+                        <option value="1">1 Persona</option>
+                        <option value="2">2 Personas</option>
+                        <option value="3">3 Personas</option>
+                        <option value="4">4 Personas</option>
+                        <option value="5">5 Personas</option>
+                        <option value="6">Más de 6 (Contactar por teléfono)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentario">Peticiones especiales (Opcional)</label>
+                    <textarea id="comentario" name="comentario" rows="3" placeholder="Alergias, trona para bebé, celebración..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Confirmar Reserva</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="seccion bg-claro">
+        <div class="container reveal">
+            <h2 class="section-title">Encuéntranos</h2>
+            <p class="section-subtitle">Estamos en el corazón de la ciudad. Ven a visitarnos.</p>
+            
+            <div class="contacto-grid">
+                <!-- Información a la izquierda -->
+                <div class="contacto-info">
+                    <h3>Mirador del Guadiana | Gastrobar</h3>
+                    <p><strong>Dirección:</strong> Calle Constantino, 1 (06800 - Mérida, Badajoz)</p>
+                    <p><strong>Horario:</strong> Lun - Dom, 12:00 - 24:00</p>
+                    <p><strong>Teléfono:</strong> +34 615 186 382</p>
+                    
+                    
+                    <div class="redes-sociales">
+                        <a href="https://www.instagram.com/miradordelguadiana_gastrobar?igsh=MW13b2oyc2V1bXlmbA%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+                        <a href="https://www.facebook.com/share/1Vo3K2kNXR/?mibextid=wwXIfr" target="_blank">Facebook</a>
+                        <a href="https://www.tripadvisor.es/Restaurant_Review-g227871-d32707643-Reviews-Gastrobar_Mirador_del_Guadiana-Merida_Province_of_Badajoz_Extremadura.html" target="_blank">TripAdvisor</a>
+                    </div>
+                </div>
+                
+                <!-- Imagen del mapa a la derecha -->
+                <div class="contacto-mapa-imagen">
+                    <a href="https://www.google.com/maps/place/Gastrobar+Mirador+del+Guadiana/@38.9128693,-6.3450238,17z/data=!3m1!4b1!4m6!3m5!1s0xd142700035a3abb:0xa8f287b12a54458f!8m2!3d38.9128693!4d-6.3450238!16s%2Fg%2F11wff79clj?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D" target="_blank" title="Abrir en Google Maps">
+                        <img src="mapa.png" alt="Mapa de ubicación Gastrobar Mirador">
+                        <div class="mapa-overlay">
+                            <span>Ver en Google Maps</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Gastrobar Mirador del Guadiana. Todos los derechos reservados.</p>
+    </footer>
 
     
 </body>
 </html>
-
-
-
-
-
-
