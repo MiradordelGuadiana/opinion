@@ -86,7 +86,7 @@ document.querySelectorAll('.accordion-header').forEach(button => {
     
 
     // ==========================================
-    // 4. Carrusel de Sugerencias
+    // 4. Carrusel de Sugerencias (Corregido)
     // ==========================================
     const track = document.getElementById('carouselTrack');
     const btnPrev = document.getElementById('btnPrev');
@@ -96,66 +96,72 @@ document.querySelectorAll('.accordion-header').forEach(button => {
         let currentIndex = 0;
         const slides = document.querySelectorAll('.carousel-slide');
         const totalSlides = slides.length;
+        let autoplayTimer = null; // Variable para controlar el temporizador
 
         function updateCarousel() {
             track.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
 
-        btnNext.addEventListener('click', () => {
+        function moverSiguiente() {
             if (currentIndex < totalSlides - 1) {
                 currentIndex++;
             } else {
                 currentIndex = 0; 
             }
             updateCarousel();
-        });
+        }
 
-        btnPrev.addEventListener('click', () => {
+        function moverAnterior() {
             if (currentIndex > 0) {
                 currentIndex--;
             } else {
                 currentIndex = totalSlides - 1; 
             }
             updateCarousel();
+        }
+
+        // Función para resetear el temporizador automático si el usuario interactúa
+        function resetAutoplay() {
+            clearInterval(autoplayTimer);
+            autoplayTimer = setInterval(moverSiguiente, 5000);
+        }
+
+        btnNext.addEventListener('click', () => {
+            moverSiguiente();
+            resetAutoplay();
         });
 
-        // Autoplay del carrusel (cada 5 segundos)
-        setInterval(() => {
-            if (currentIndex < totalSlides - 1) {
-                currentIndex++;
-            } else {
-                currentIndex = 0;
-            }
-            updateCarousel();
-        }, 5000); 
+        btnPrev.addEventListener('click', () => {
+            moverAnterior();
+            resetAutoplay();
+        });
 
-        // --- NUEVO CÓDIGO PARA DESLIZAR (SWIPE) EN MÓVILES ---
+        // Iniciar Autoplay por primera vez
+        autoplayTimer = setInterval(moverSiguiente, 5000); 
+
+        // --- DESLIZAR (SWIPE) EN MÓVILES ---
         let touchStartX = 0;
         let touchEndX = 0;
 
-        // Detectar dónde pone el dedo el usuario
         track.addEventListener('touchstart', e => {
             touchStartX = e.changedTouches[0].screenX;
         }, { passive: true });
 
-        // Detectar dónde levanta el dedo
         track.addEventListener('touchend', e => {
             touchEndX = e.changedTouches[0].screenX;
             checkDirection();
         }, { passive: true });
 
-        // Comprobar la dirección del deslizamiento
         function checkDirection() {
-            const umbral = 50; // Píxeles mínimos que hay que arrastrar para cambiar de foto
+            const umbral = 50;
             if (touchStartX - touchEndX > umbral) {
-                // Deslizó hacia la izquierda -> Siguiente foto
-                btnNext.click(); 
+                moverSiguiente();
+                resetAutoplay();
             } else if (touchEndX - touchStartX > umbral) {
-                // Deslizó hacia la derecha -> Foto anterior
-                btnPrev.click();
+                moverAnterior();
+                resetAutoplay();
             }
         }
-        // --- FIN DEL NUEVO CÓDIGO ---
     }
 
     // ==========================================
@@ -227,8 +233,7 @@ document.querySelectorAll('.accordion-header').forEach(button => {
         
         // Definimos los turnos: Comida (12 a 15:45) y Cena (19 a 23:45)
         const turnos = [
-            { inicio: 12, fin: 15 }, // Turno de comida
-            { inicio: 19, fin: 23 }  // Turno de cena
+            { inicio: 12, fin: 23 } 
         ];
 
         turnos.forEach(turno => {
